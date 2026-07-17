@@ -1,0 +1,10 @@
+project_name: "L2R-Experiment-Framework"
+data:
+  raw_train_path: "data/raw/train.txt"
+  raw_test_path: "data/raw/test.txt"
+  processed_dir: "data/processed/"
+  validation_split: 0.2
+  random_state: 42
+
+metrics:
+  top_k_values: [5, 10]

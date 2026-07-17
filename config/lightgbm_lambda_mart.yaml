@@ -1,0 +1,12 @@
+model:
+  name: "LightGBMLambdaMART"
+  type: "lightgbm"
+  hyperparameters:
+    objective: "lambdarank"
+    metric: "ndcg"
+    ndcg_eval_at: [10]
+    learning_rate: 0.1
+    num_leaves: 127
+    max_depth: -1
+    min_data_in_leaf: 50
+    n_estimators: 150
