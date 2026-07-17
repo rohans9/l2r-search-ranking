@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "l2r-search-ranking"
+version = "0.1.0"
+description = "Learning-to-rank experimentation framework for MSLR-WEB30K with LightGBM/XGBoost and IR metrics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+	"joblib",
+	"lightgbm",
+	"mlflow",
+	"numpy",
+	"PyYAML",
+	"scikit-learn",
+	"xgboost",
+]
+
+[project.optional-dependencies]
+dev = [
+	"pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["src", "src.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

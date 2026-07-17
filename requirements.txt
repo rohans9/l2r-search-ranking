@@ -1,0 +1,8 @@
+numpy
+PyYAML
+lightgbm
+joblib
+scikit-learn
+mlflow
+xgboost
+pytest
