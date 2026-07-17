@@ -1,0 +1,29 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local experiment outputs
+mlruns/
+tmp_artifacts/
+
+# Local datasets and binaries (do not commit benchmark data)
+data/raw/
+data/processed/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
